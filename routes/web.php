@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Blog;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\Pages;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -19,4 +20,6 @@ Route::get('/blog', [Blog::class, 'index'])->name('blog');
 // Search
 Route::get('/search', [Blog::class, 'search'])->name('search');
 
-
+// Form
+Route::get('/form', [FormController::class, 'index'])->name('form.index');
+Route::post('/form', [FormController::class, 'store'])->name('form.store');

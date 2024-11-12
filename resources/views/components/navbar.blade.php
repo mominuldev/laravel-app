@@ -1,7 +1,7 @@
 <header class="bg-gray-200 py-5">
     <nav class="navbar navbar-expand-lg ">
         <div class="container mx-auto flex justify-between items-center">
-            <a class="text-2xl font-black" href="#">Navbar</a>
+            <a class="text-2xl font-black" href="{{ route('home') }}">Navbar</a>
 
             <ul class="flex gap-6">
                 <li class="nav-item"><a class="text-blue-600 font-medium active" href="{{ route('home') }}">Home</a></li>
